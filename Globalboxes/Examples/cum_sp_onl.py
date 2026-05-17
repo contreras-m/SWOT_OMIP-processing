@@ -15,7 +15,7 @@ from shapely.geometry import shape, box
 
 def read_json_s3(endpoint_url,file):
           #fs = s3fs.S3FileSystem(key="r3WtYCGWba3FDbT2eKeQ",secret="8OCnb4LX3sPaKkp1aUCzJmfQljmaYsqg2KmQTups", endpoint_url=endpoint_url)
-        fs = s3fs.S3FileSystem(key="r3WtYCGWba3FDbT2eKeQ",secret="8OCnb4LX3sPaKkp1aUCzJmfQljmaYsqg2KmQTups", endpoint_url=endpoint_url)
+        fs = s3fs.S3FileSystem(key="***",secret="***", endpoint_url=endpoint_url)
         with fs.open(file, mode='rb') as fileObj:
             data = json.load(fileObj)
         return data
